@@ -68,7 +68,7 @@
       </v-layout>
       <v-layout row>
         <v-flex xs5>
-          <v-checkbox v-model="config.shuffelIps" :label="`Shuffel IPs`" color="red" hide-details></v-checkbox>
+          <v-checkbox v-model="config.shuffleIps" :label="`Shuffle IPs`" color="red" hide-details></v-checkbox>
         </v-flex>
       </v-layout>
       <v-layout row>
@@ -129,8 +129,8 @@ export default {
         responseTimeout: 150000,
         loopBackOnly: false,
         findAuthResponses: false,
-        shuffelIps: false,
-        ports: [80, 54, 23123]
+        shuffleIps: false,
+        ports: [80, 3000, 4040, 5000, 5800, 7000, 8000, 8080, 8090, 8888, 9000, 9090]
       },
       portInput: "",
       isWaiting: false
